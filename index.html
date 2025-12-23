@@ -58,6 +58,39 @@
             color: #888;
         }
 
+        .circular-element {
+            position: fixed;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .circle-1 {
+            top: -15%;
+            right: -10%;
+            width: 60vw;
+            height: 60vw;
+            max-width: 800px;
+            max-height: 800px;
+        }
+
+        .circle-2 {
+            bottom: -20%;
+            left: -5%;
+            width: 70vw;
+            height: 70vw;
+            max-width: 900px;
+            max-height: 900px;
+        }
+
+        body {
+            position: relative;
+        }
+
+        main, footer {
+            position: relative;
+            z-index: 1;
+        }
+
         @media (max-width: 480px) {
             .container {
                 padding: 0 6vw 12vh;
@@ -70,10 +103,32 @@
             footer {
                 padding: 1.5rem 6vw;
             }
+
+            .circle-1 {
+                width: 150vw;
+                max-width: none;
+            }
+
+            .circle-2 {
+                width: 180vw;
+                max-width: none;
+            }
         }
     </style>
 </head>
 <body>
+    <svg class="circular-element circle-1" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
+        <circle cx="200" cy="200" r="180" fill="none" stroke="#1a1a1a" stroke-width="8"/>
+        <circle cx="200" cy="200" r="150" fill="none" stroke="#1a1a1a" stroke-width="8"/>
+        <path d="M 200 20 A 180 180 0 0 1 380 200" fill="none" stroke="#1a1a1a" stroke-width="12" stroke-linecap="round"/>
+    </svg>
+
+    <svg class="circular-element circle-2" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
+        <circle cx="200" cy="200" r="190" fill="none" stroke="#1a1a1a" stroke-width="6" opacity="0.5"/>
+        <circle cx="200" cy="200" r="160" fill="none" stroke="#1a1a1a" stroke-width="6" opacity="0.5"/>
+        <circle cx="200" cy="200" r="130" fill="none" stroke="#1a1a1a" stroke-width="6" opacity="0.5"/>
+    </svg>
+
     <main class="container">
         <h1>IronKite<br>Robotics</h1>
         <p class="subheader">Coming soon</p>
