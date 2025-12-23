@@ -31,61 +31,32 @@
         }
 
         h1 {
-            font-size: clamp(2.5rem, 8vw, 6rem);
+            font-size: clamp(3.5rem, 10vw, 8rem);
             font-weight: 700;
-            letter-spacing: -0.03em;
-            line-height: 0.95;
+            letter-spacing: -0.04em;
+            line-height: 0.85;
             text-transform: uppercase;
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
         }
 
         .subheader {
-            font-size: clamp(0.875rem, 1.5vw, 1.125rem);
-            font-weight: 400;
+            font-size: clamp(1rem, 1.5vw, 1.25rem);
+            font-weight: 700;
             color: #1a1a1a;
-            letter-spacing: 0.2em;
+            letter-spacing: 0.05em;
             text-transform: uppercase;
-            border-top: 1px solid #1a1a1a;
+            border-top: 4px solid #1a1a1a;
             padding-top: 1.5rem;
-            max-width: 320px;
+            max-width: 400px;
         }
 
         footer {
             padding: 2rem 10vw;
-            font-size: 0.75rem;
-            letter-spacing: 0.1em;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
             text-transform: uppercase;
-            color: #888;
-        }
-
-        .circular-element {
-            position: fixed;
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        .circle-1 {
-            top: 50%;
-            right: 5%;
-            transform: translateY(-50%);
-            width: 800px;
-            height: 800px;
-        }
-
-        .circle-2 {
-            bottom: 15%;
-            left: 5%;
-            width: 900px;
-            height: 900px;
-        }
-
-        body {
-            position: relative;
-        }
-
-        main, footer {
-            position: relative;
-            z-index: 1;
+            color: #1a1a1a;
         }
 
         @media (max-width: 480px) {
@@ -104,18 +75,6 @@
     </style>
 </head>
 <body>
-    <svg class="circular-element circle-1" viewBox="0 0 400 400" preserveAspectRatio="none">
-        <path d="M 200 30 A 170 170 0 0 1 370 200 A 170 170 0 0 1 200 370" fill="none" stroke="#1a1a1a" stroke-width="14" stroke-linecap="round"/>
-        <path d="M 200 55 A 145 145 0 0 1 345 200 A 145 145 0 0 1 200 345" fill="none" stroke="#1a1a1a" stroke-width="14" stroke-linecap="round"/>
-        <path d="M 200 80 A 120 120 0 0 1 320 200 A 120 120 0 0 1 200 320" fill="none" stroke="#1a1a1a" stroke-width="14" stroke-linecap="round"/>
-    </svg>
-
-    <svg class="circular-element circle-2" viewBox="0 0 400 400" preserveAspectRatio="none">
-        <path d="M 30 200 A 170 170 0 0 1 200 30 A 170 170 0 0 1 370 200" fill="none" stroke="#1a1a1a" stroke-width="12" opacity="0.6" stroke-linecap="round"/>
-        <path d="M 55 200 A 145 145 0 0 1 200 55 A 145 145 0 0 1 345 200" fill="none" stroke="#1a1a1a" stroke-width="12" opacity="0.4" stroke-linecap="round"/>
-        <path d="M 80 200 A 120 120 0 0 1 200 80 A 120 120 0 0 1 320 200" fill="none" stroke="#1a1a1a" stroke-width="12" opacity="0.2" stroke-linecap="round"/>
-    </svg>
-
     <main class="container">
         <h1>IronKite<br>Robotics</h1>
         <p class="subheader">Coming soon</p>
