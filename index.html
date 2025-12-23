@@ -65,21 +65,18 @@
         }
 
         .circle-1 {
-            top: -15%;
-            right: -10%;
-            width: 60vw;
-            height: 60vw;
-            max-width: 800px;
-            max-height: 800px;
+            top: 50%;
+            right: 5%;
+            transform: translateY(-50%);
+            width: 800px;
+            height: 800px;
         }
 
         .circle-2 {
-            bottom: -20%;
-            left: -5%;
-            width: 70vw;
-            height: 70vw;
-            max-width: 900px;
-            max-height: 900px;
+            bottom: 15%;
+            left: 5%;
+            width: 900px;
+            height: 900px;
         }
 
         body {
@@ -103,30 +100,20 @@
             footer {
                 padding: 1.5rem 6vw;
             }
-
-            .circle-1 {
-                width: 150vw;
-                max-width: none;
-            }
-
-            .circle-2 {
-                width: 180vw;
-                max-width: none;
-            }
         }
     </style>
 </head>
 <body>
-    <svg class="circular-element circle-1" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
-        <circle cx="200" cy="200" r="180" fill="none" stroke="#1a1a1a" stroke-width="8"/>
-        <circle cx="200" cy="200" r="150" fill="none" stroke="#1a1a1a" stroke-width="8"/>
-        <path d="M 200 20 A 180 180 0 0 1 380 200" fill="none" stroke="#1a1a1a" stroke-width="12" stroke-linecap="round"/>
+    <svg class="circular-element circle-1" viewBox="0 0 400 400" preserveAspectRatio="none">
+        <path d="M 200 30 A 170 170 0 0 1 370 200 A 170 170 0 0 1 200 370" fill="none" stroke="#1a1a1a" stroke-width="14" stroke-linecap="round"/>
+        <path d="M 200 55 A 145 145 0 0 1 345 200 A 145 145 0 0 1 200 345" fill="none" stroke="#1a1a1a" stroke-width="14" stroke-linecap="round"/>
+        <path d="M 200 80 A 120 120 0 0 1 320 200 A 120 120 0 0 1 200 320" fill="none" stroke="#1a1a1a" stroke-width="14" stroke-linecap="round"/>
     </svg>
 
-    <svg class="circular-element circle-2" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
-        <circle cx="200" cy="200" r="190" fill="none" stroke="#1a1a1a" stroke-width="6" opacity="0.5"/>
-        <circle cx="200" cy="200" r="160" fill="none" stroke="#1a1a1a" stroke-width="6" opacity="0.5"/>
-        <circle cx="200" cy="200" r="130" fill="none" stroke="#1a1a1a" stroke-width="6" opacity="0.5"/>
+    <svg class="circular-element circle-2" viewBox="0 0 400 400" preserveAspectRatio="none">
+        <path d="M 30 200 A 170 170 0 0 1 200 30 A 170 170 0 0 1 370 200" fill="none" stroke="#1a1a1a" stroke-width="12" opacity="0.6" stroke-linecap="round"/>
+        <path d="M 55 200 A 145 145 0 0 1 200 55 A 145 145 0 0 1 345 200" fill="none" stroke="#1a1a1a" stroke-width="12" opacity="0.4" stroke-linecap="round"/>
+        <path d="M 80 200 A 120 120 0 0 1 200 80 A 120 120 0 0 1 320 200" fill="none" stroke="#1a1a1a" stroke-width="12" opacity="0.2" stroke-linecap="round"/>
     </svg>
 
     <main class="container">
